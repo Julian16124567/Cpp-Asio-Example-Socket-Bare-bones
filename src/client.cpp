@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <boost/asio.hpp>
+#include <exception>
 using boost::asio::ip::tcp;
 using std::string;
 
@@ -15,6 +16,7 @@ int main()
 
     try
     {
+      
     }
     catch (const std::exception &e)
     {
