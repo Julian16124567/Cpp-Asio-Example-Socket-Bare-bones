@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <boost/asio.hpp>
+#include <exception>
 using boost::asio::ip::tcp;
 using std::string;
 
@@ -17,9 +18,13 @@ int main()
 
     try
     {
+<<<<<<< HEAD
         auto endpoint = resolver.resolve(ip, port);
         std::cout << "Connected to " << ip << ":" << port << std::endl;
         boost::asio::write(socket, boost::asio::buffer(buffer));
+=======
+      
+>>>>>>> origin/master
     }
     catch (const std::exception &e)
     {
