@@ -18,13 +18,9 @@ int main()
 
     try
     {
-<<<<<<< HEAD
         auto endpoint = resolver.resolve(ip, port);
         std::cout << "Connected to " << ip << ":" << port << std::endl;
         boost::asio::write(socket, boost::asio::buffer(buffer));
-=======
-      
->>>>>>> origin/master
     }
     catch (const std::exception &e)
     {
